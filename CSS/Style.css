@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* сбрасываем настройки для ul,ol, для гиперссылок */
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #373434;
+}
+body{
+	/* обязательно */
+	font-family: "PT Sans", Arial, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	/* line-height: 24px высчитали 16px+16/2 */
+	line-height: 24px;
+	color: #000;
+}
+.header{
+	/* если есть заливка */
+	background: #c0c0c0;
+}
+.container{
+	/* для контейнера прописываются только следующие настройки */
+	width: 1320px;
+	margin: 0 auto;
+}
+.header-inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.menu li{
+	/* отступов задаем между словами */
+	margin: 0 0.4vw;
+}
+.menu a{
+	color: black;
+	font-family: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+.contact{
+	/* для текста друг под другом */
+	display: flex;
+	flex-direction: column;
+}
+.contact a{
+	/* унаследовать отродителяцвет  inherit*/
+	color: inherit;
+}
+
+/*для группировки с одинаковыми стилями находим родителя и прописываем .В нашем случае .header-inner a{все стили}
+.contact a{
+	font-family: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: inherit;
+}
+.menu a{
+	color: black;
+	font-family: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+} */
